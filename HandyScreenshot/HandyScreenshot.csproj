@@ -1,10 +1,10 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <UseWPF>true</UseWPF>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFrameworks>net48;net8.0-windows</TargetFrameworks>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Product>HandyScreenshot</Product>
-    <Copyright>Copyright (c) 2020-2022 DingpingZhang</Copyright>
+    <Copyright>Copyright (c) 2020-2024 DingpingZhang</Copyright>
     <AssemblyTitle>HandyScreenshot</AssemblyTitle>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <LangVersion>preview</LangVersion>
@@ -14,7 +14,7 @@
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <GeneratePackageOnBuild Condition=" '$(Configuration)' == 'Release' ">true</GeneratePackageOnBuild>
-    <Version>0.2.0</Version>
+    <Version>0.3.0</Version>
     <PackageProjectUrl>https://github.com/HandyOrg/HandyScreenshot</PackageProjectUrl>
     <RepositoryUrl>https://github.com/HandyOrg/HandyScreenshot</RepositoryUrl>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>

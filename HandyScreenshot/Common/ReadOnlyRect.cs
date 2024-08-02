@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Windows;
+using System.Windows.Media.Media3D;
 
 namespace HandyScreenshot.Common
 {
@@ -52,17 +53,19 @@ namespace HandyScreenshot.Common
 
         public ReadOnlyRect Union(ReadOnlyRect rect)
         {
-            if (IsEmpty || rect.IsEmpty) return Empty;
+            if (IsEmpty || rect.IsEmpty)
+            {
+                return Empty;
+            }
 
             int x = Math.Min(X, rect.X);
             int y = Math.Min(Y, rect.Y);
-            int width = rect.Width == int.MaxValue || Width == int.MaxValue
+            int width = (rect.Width == int.MaxValue || Width == int.MaxValue)
                 ? int.MaxValue
                 : Math.Max(Math.Max(X + Width, rect.X + rect.Width) - x, 0);
-            int height = rect.Height == int.MaxValue || Height == int.MaxValue
+            int height = (rect.Height == int.MaxValue || Height == int.MaxValue)
                 ? int.MaxValue
-                : Math.Max(Math.Max(Y + Height, rect.Y + Height) - y, 0);
-
+                : Math.Max(Math.Max(Y + Height, rect.Y + rect.Height) - y, 0);
             return (x, y, width, height);
         }
 
