@@ -21,3 +21,13 @@
     * [ ] 图形绘制：矩形/圆形绘制、直线/折线绘制、箭头、文字输入；
     * [ ] 涂鸦：笔、马克笔、马赛克；
     * [ ] 撤销/重做、橡皮擦；
+
+
+## 相關截圖專案
+https://github.com/jafeeye/ScreenCapture  
+https://github.com/jafeeye/Capturer  
+https://github.com/jafeeye/zenshot  
+https://github.com/jafeeye/easy-capture  
+https://github.com/jafeeye/SETUNA2  
+https://github.com/jafeeye/captureexplorer  
+
